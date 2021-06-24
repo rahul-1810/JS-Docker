@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Docker WebAPP</title>
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
+    <link rel="icon" href="assets/images/fevicon.png" type="image/gif" />
+
+    </head>
+    
+    <body style="background-color: black;">
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo" style="margin-left: 440px; color: black;">
+                            <h3><span style="color: blue;">D</span>ocker <span style="color: blue;">W</span>ebApp</h3>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <br><br><br><br><br>
+    <!-- ***** Home Parallax Start ***** -->
+    <section class="mini" id="work-process" style="margin-top: 11px;">
+        <div class="mini-content">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-3 col-lg-6">
+                        <div class="info">
+                            <h1>Manage Your Docker Containers</h1>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ***** Mini Box Start ***** -->
+                <div class="row">
+                    <!-- Start Box 1 -->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="" class="mini-box" data-toggle="modal" data-target="#modalContactForm1">
+                            <i><img src="assets/images/work-process-item-01.png" alt="" height="70px"></i>
+                            <strong>Launch Container</strong>
+                        </a>
+                    </div>
+                    <!-- End Box 1 -->
+
+                    <!-- Start Box 2 -->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="" class="mini-box" data-toggle="modal" data-target="#modalContactForm2">
+                            <i><img src="assets/images/pull.png" alt="" height="70px"></i>
+                            <strong>Pull Image for Container</strong>
+                        </a>
+                    </div>
+                    <!-- End Box 2 -->
+
+                    <!-- Start Box 3 -->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="" class="mini-box" data-toggle="modal" data-target="#modalContactForm3">
+                            <i><img src="assets/images/all.png" alt="" height="70px"></i>
+                            <strong>Show All Containers</strong>
+                            <span></span>
+                        </a>
+                    </div>
+                    <!-- End Box 3 -->
+
+                    <!-- Start Box 4 -->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="" class="mini-box" data-toggle="modal" data-target="#modalContactForm4">
+                            <i><img src="assets/images/console.png" alt="" height="70px"></i>
+                            <strong>Start Container</strong>
+                            <span></span>
+                        </a>
+                    </div>
+                    <!-- Start Box 4 -->
+
+                    <!-- Start Box 5 -->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="" class="mini-box" data-toggle="modal" data-target="#modalContactForm5">
+                            <i><img src="assets/images/stop.png" alt="" height="70px"></i>
+                            <strong>Stop Container</strong>
+                            <span></span>
+                        </a>
+                    </div>
+                    <!-- Start Box 5 -->
+
+                    <!-- Start Box 6 -->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                        <a href="" class="mini-box" data-toggle="modal" data-target="#modalContactForm6">
+                            <i><img src="assets/images/icon2.png" alt="" height="70px"></i>
+                            <strong>Remove Container</strong>
+                            <span></span>
+                        </a>
+                    </div>
+                    <!-- Start Box 6 -->
+
+                </div>
+                <!-- ***** Mini Box End ***** -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top:-18px;">
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/rahul-kashyap18/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/rahul-1810"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">- Made By Rahul Kashyap -</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ***** Home Parallax End ***** -->
+
+
+
+    <!-- SCRIPT FOR FUNCTIONS -->
+
+    <script>
+
+      function launch(cmd, img, ver , p) {
+        var xhr = new XMLHttpRequest(); 
+        document.getElementById(p).innerHTML="Loading....";
+        var y = document.getElementById(img).value;
+        var z = document.getElementById(ver).value;
+        xhr.open("GET", "http://192.168.0.106/cgi-bin/final.py?x=" + cmd +"&y=" + y + "&z=" + z, true);
+        xhr.send();
+        xhr.onload = function() {
+            var output = xhr.responseText;
+            document.getElementById(p).innerHTML = output;
+        }
+    }
+    
+        function pull(cmd, img, ver,p) {
+        var xhr = new XMLHttpRequest();
+        document.getElementById(p).innerHTML="Loading...."; 
+        var y = document.getElementById(img).value;
+        var z = document.getElementById(ver).value;
+        xhr.open("GET", "http://192.168.0.106/cgi-bin/final.py?x=" + cmd +"&y=" + y + "&z=" + z, true);
+        xhr.send();
+        xhr.onload = function() {
+            var output = xhr.responseText;
+            document.getElementById(p).innerHTML = output;
+        }
+    }
+        function allcon(cmd,p) {
+        var xhr = new XMLHttpRequest(); 
+        document.getElementById(p).innerHTML="Loading....";
+        xhr.open("GET", "http://192.168.0.106/cgi-bin/final.py?x=" + cmd , true);
+        xhr.send();
+        xhr.onload = function() {
+            var output = xhr.responseText;
+            document.getElementById(p).innerHTML = output;
+        }
+    }
+
+        function start(cmd,name,p) {
+        var xhr = new XMLHttpRequest(); 
+        document.getElementById(p).innerHTML="Loading....";
+        var y = document.getElementById(name).value;
+        xhr.open("GET", "http://192.168.0.106/cgi-bin/final.py?x=" + cmd + "&y=" + y , true);
+        xhr.send();
+        xhr.onload = function() {
+            var output = xhr.responseText;
+            document.getElementById(p).innerHTML = output;
+        }
+    }
+
+
+        function stop(cmd,name,p) {
+        var xhr = new XMLHttpRequest(); 
+        document.getElementById(p).innerHTML="Loading....";
+        var y = document.getElementById(name).value;
+        xhr.open("GET", "http://192.168.0.106/cgi-bin/final.py?x=" + cmd + "&y=" + y , true);
+        xhr.send();
+        xhr.onload = function() {
+            var output = xhr.responseText;
+            document.getElementById(p).innerHTML = output;
+        }
+    }
+
+        function remove(cmd,name,p) {
+        var xhr = new XMLHttpRequest(); 
+        document.getElementById(p).innerHTML="Loading....";
+        var y = document.getElementById(name).value;
+        xhr.open("GET", "http://192.168.0.106/cgi-bin/final.py?x=" + cmd + "&y=" + y , true);
+        xhr.send();
+        xhr.onload = function() {
+            var output = xhr.responseText;
+            document.getElementById(p).innerHTML = output;
+        }
+    }
+
+    </script>
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+
+<!-- Start Box 1 -->
+<div class="modal fade" id="modalContactForm1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Enter Following Details: </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Enter Image Name: </label>
+          <input type="text" id="name" class="form-control validate">
+        </div>
+
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Enter Image Version: </label>
+          <input type="text" id="ver" class="form-control validate">
+        </div>
+      
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Output</label>
+        </div>
+        <pre>
+          <p id="op1" ></p>
+        </pre>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique" onclick="launch('run','name','ver' , 'op1')" >Submit</button>
+      </div>
+
+
+        
+
+    </div>
+  </div>
+</div>
+<!-- End Box 1 -->
+
+<!-- Start Box 2 -->
+<div class="modal fade" id="modalContactForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Enter Following Details: </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Enter Image Name: </label>
+          <input type="text" id="iname" class="form-control validate">
+        </div>
+
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Enter Image Version: </label>
+          <input type="text" id="cver" class="form-control validate">
+        </div>
+      
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Output</label>
+        </div>
+        <pre>
+          <p id="op2" ></p>
+        </pre>
+      
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique" onclick="pull('pull','iname','cver','op2')" >Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Box 2 -->
+
+<!-- Start Box 3 -->
+<div class="modal fade" id="modalContactForm3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Press Submit</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">    Output</label>
+        </div>
+        <pre>
+          <p id="op3" ></p>
+        </pre>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique" onclick="allcon('list','op3')">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Box 3 -->
+
+<!-- Start Box 4 -->
+<div class="modal fade" id="modalContactForm4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Enter Following Details: </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Enter Container Name/ID: </label>
+          <input type="text" id="i4" class="form-control validate">
+        </div>
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Output</label>
+        </div>
+        <pre>
+          <p id="op4" ></p>
+        </pre>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique" onclick="start('start','i4','op4')">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Box 4 -->
+
+<!-- Start Box 5 -->
+<div class="modal fade" id="modalContactForm5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Enter Following Details: </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Enter Container Name/ID: </label>
+          <input type="text" id="i5" class="form-control validate">
+        </div>
+
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Output</label>
+        </div>
+        <pre>
+          <p id="op5" ></p>
+        </pre>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique" onclick="stop('stop','i5','op5')">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Box 5 -->
+
+<!-- Start Box 6 -->
+<div class="modal fade" id="modalContactForm6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Enter Following Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Enter Container ID/Name: </label>
+          <input type="text" id="cname" class="form-control validate">
+        </div>
+       <div class="md-form mb-3">
+          <label data-error="wrong" data-success="right" for="form34">Output</label>
+        </div>
+        <pre>
+          <p id="op6" ></p>
+        </pre>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique" onclick="remove('remove','cname','op6')">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Box 6 -->
+
+
+</body>
+</html>
